@@ -13234,42 +13234,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;tidyr&quot;</span><span class="p">,</span> <span class="s">&quot;devtools&quot;</span><span class="p">))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>also installing the dependencies ‘rlang’, ‘fs’, ‘tidyselect’, ‘git2r’, ‘pkgload’, ‘usethis’
-
-Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘rlang’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘fs’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘git2r’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘tidyselect’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘pkgload’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘usethis’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘tidyr’ had non-zero exit status”Warning message in install.packages(c(&#34;tidyr&#34;, &#34;devtools&#34;)):
-“installation of package ‘devtools’ had non-zero exit status”Updating HTML index of packages in &#39;.Library&#39;
-Making &#39;packages.html&#39; ... done
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13287,41 +13258,13 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">devtools</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;garrettgman/DSR&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-Error in loadNamespace(name): there is no package called ‘devtools’
-Traceback:
-
-1. devtools::install_github
-2. getExportedValue(pkg, name)
-3. asNamespace(ns)
-4. getNamespace(ns)
-5. tryCatch(loadNamespace(name), error = function(e) stop(e))
-6. tryCatchList(expr, classes, parentenv, handlers)
-7. tryCatchOne(expr, names, parentenv, handlers[[1L]])
-8. value[[3L]](cond)</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13737,7 +13680,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># Data set three</span>
@@ -13860,7 +13803,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">table2</span>
@@ -13883,6 +13826,42 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>country</th><th scope=col>year</th><th scope=col>key</th><th scope=col>value</th></tr></thead>
+<tbody>
+	<tr><td>Afghanistan</td><td>1999       </td><td>cases      </td><td>       745 </td></tr>
+	<tr><td>Afghanistan</td><td>1999       </td><td>population </td><td>  19987071 </td></tr>
+	<tr><td>Afghanistan</td><td>2000       </td><td>cases      </td><td>      2666 </td></tr>
+	<tr><td>Afghanistan</td><td>2000       </td><td>population </td><td>  20595360 </td></tr>
+	<tr><td>Brazil     </td><td>1999       </td><td>cases      </td><td>     37737 </td></tr>
+	<tr><td>Brazil     </td><td>1999       </td><td>population </td><td> 172006362 </td></tr>
+	<tr><td>Brazil     </td><td>2000       </td><td>cases      </td><td>     80488 </td></tr>
+	<tr><td>Brazil     </td><td>2000       </td><td>population </td><td> 174504898 </td></tr>
+	<tr><td>China      </td><td>1999       </td><td>cases      </td><td>    212258 </td></tr>
+	<tr><td>China      </td><td>1999       </td><td>population </td><td>1272915272 </td></tr>
+	<tr><td>China      </td><td>2000       </td><td>cases      </td><td>    213766 </td></tr>
+	<tr><td>China      </td><td>2000       </td><td>population </td><td>1280428583 </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13921,7 +13900,7 @@ spread()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">table2</span>
@@ -13972,7 +13951,7 @@ spread()
 
 <div class="output_html rendered_html output_subarea ">
 <table>
-<thead><tr><th scope=col>country</th><th scope=col>year</th><th scope=col>key</th><th scope=col>value</th></tr></thead>
+<thead><tr><th scope=col>country</th><th scope=col>year</th><th scope=col>type</th><th scope=col>count</th></tr></thead>
 <tbody>
 	<tr><td>Afghanistan</td><td>1999       </td><td>cases      </td><td>       745 </td></tr>
 	<tr><td>Afghanistan</td><td>1999       </td><td>population </td><td>  19987071 </td></tr>
@@ -13991,23 +13970,6 @@ spread()
 
 </div>
 
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-Attaching package: ‘tidyr’
-
-The following objects are masked from ‘package:DSR’:
-
-    table1, table2, table3, table5, who
-
-</pre>
-</div>
 </div>
 
 <div class="output_area">
@@ -14100,7 +14062,7 @@ gather()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">table4</span>  <span class="c1"># cases</span>
@@ -14114,6 +14076,33 @@ gather()
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>country</th><th scope=col>1999</th><th scope=col>2000</th></tr></thead>
+<tbody>
+	<tr><td>Afghanistan</td><td>   745     </td><td>  2666     </td></tr>
+	<tr><td>Brazil     </td><td> 37737     </td><td> 80488     </td></tr>
+	<tr><td>China      </td><td>212258     </td><td>213766     </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14132,7 +14121,7 @@ gather()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">gather</span><span class="p">(</span><span class="n">table4</span><span class="p">,</span> <span class="s">&quot;year&quot;</span><span class="p">,</span> <span class="s">&quot;cases&quot;</span><span class="p">,</span> <span class="m">2</span><span class="o">:</span><span class="m">3</span><span class="p">)</span>
@@ -14149,6 +14138,36 @@ gather()
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>country</th><th scope=col>year</th><th scope=col>cases</th></tr></thead>
+<tbody>
+	<tr><td>Afghanistan</td><td>1999       </td><td>   745     </td></tr>
+	<tr><td>Brazil     </td><td>1999       </td><td> 37737     </td></tr>
+	<tr><td>China      </td><td>1999       </td><td>212258     </td></tr>
+	<tr><td>Afghanistan</td><td>2000       </td><td>  2666     </td></tr>
+	<tr><td>Brazil     </td><td>2000       </td><td> 80488     </td></tr>
+	<tr><td>China      </td><td>2000       </td><td>213766     </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14179,7 +14198,7 @@ gather()
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">table5</span>  <span class="c1"># population</span>
@@ -14202,6 +14221,78 @@ gather()
 <span class="c1">## 4 Afghanistan 2000   20595360</span>
 <span class="c1">## 5      Brazil 2000  174504898</span>
 <span class="c1">## 6       China 2000 1280428583</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>country</th><th scope=col>century</th><th scope=col>year</th><th scope=col>rate</th></tr></thead>
+<tbody>
+	<tr><td>Afghanistan      </td><td>19               </td><td>99               </td><td>745/19987071     </td></tr>
+	<tr><td>Afghanistan      </td><td>20               </td><td>00               </td><td>2666/20595360    </td></tr>
+	<tr><td>Brazil           </td><td>19               </td><td>99               </td><td>37737/172006362  </td></tr>
+	<tr><td>Brazil           </td><td>20               </td><td>00               </td><td>80488/174504898  </td></tr>
+	<tr><td>China            </td><td>19               </td><td>99               </td><td>212258/1272915272</td></tr>
+	<tr><td>China            </td><td>20               </td><td>00               </td><td>213766/1280428583</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>country</th><th scope=col>rate</th><th scope=col>year</th><th scope=col>population</th></tr></thead>
+<tbody>
+	<tr><td>Afghanistan      </td><td>745/19987071     </td><td>century          </td><td>19               </td></tr>
+	<tr><td>Afghanistan      </td><td>2666/20595360    </td><td>century          </td><td>20               </td></tr>
+	<tr><td>Brazil           </td><td>37737/172006362  </td><td>century          </td><td>19               </td></tr>
+	<tr><td>Brazil           </td><td>80488/174504898  </td><td>century          </td><td>20               </td></tr>
+	<tr><td>China            </td><td>212258/1272915272</td><td>century          </td><td>19               </td></tr>
+	<tr><td>China            </td><td>213766/1280428583</td><td>century          </td><td>20               </td></tr>
+	<tr><td>Afghanistan      </td><td>745/19987071     </td><td>year             </td><td>99               </td></tr>
+	<tr><td>Afghanistan      </td><td>2666/20595360    </td><td>year             </td><td>00               </td></tr>
+	<tr><td>Brazil           </td><td>37737/172006362  </td><td>year             </td><td>99               </td></tr>
+	<tr><td>Brazil           </td><td>80488/174504898  </td><td>year             </td><td>00               </td></tr>
+	<tr><td>China            </td><td>212258/1272915272</td><td>year             </td><td>99               </td></tr>
+	<tr><td>China            </td><td>213766/1280428583</td><td>year             </td><td>00               </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>
 </pre></div>
 
     </div>
