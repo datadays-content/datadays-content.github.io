@@ -4,13 +4,13 @@
 
 ### Static Links
 
-* [1. R Basics](Part 1. Data Analysis/1. R Basics/R Basics.html)
-* [2. dplyr](Part 1. Data Analysis/2. dplyr/dplyr.html)
-* [3. Data Tidying](Part 1. Data Analysis/3. Data Tidying/Data Tidying.html)
-* [4. Data Visualization](Part 1. Data Analysis/4. Data Visualization/Data Visualization.html)
-* [5. Text Analysis](Part 1. Data Analysis/5. Text Analysis/Text Analysis.html)
-* [6. Statistical Tests](Part 1. Data Analysis/6. Statistical Tests/IntroTests.html)
-* [7. Linear Regression](Part 1. Data Analysis/7. Linear Regression/Linear Regression.html)
+* [1. R Basics](https://datadays-content.github.io/Part%201.%20Data%20Analysis/1.%20R%20Basics/R%20Basics.html)
+* [2. dplyr](https://datadays-content.github.io/Part%201.%20Data%20Analysis/2.%20dplyr/dplyr.html)
+* [3. Data Tidying](https://datadays-content.github.io/Part%201.%20Data%20Analysis/3.%20Data%20Tidying/Data%20Tidying.html)
+* [4. Data Visualization](https://datadays-content.github.io/Part%201.%20Data%20Analysis/4.%20Data%20Visualization/Data%20Visualization.html)
+* [5. Text Analysis](https://datadays-content.github.io/Part%201.%20Data%20Analysis/5.%20Text%20Analysis/Text%20Analysis.html)
+* [6. Statistical Tests](https://datadays-content.github.io/Part%201.%20Data%20Analysis/6.%20Statistical%20Tests/IntroTests.html)
+* [7. Linear Regression](https://datadays-content.github.io/Part%201.%20Data%20Analysis/7.%20Linear%20Regression/Linear%20Regression.html)
 
 ### Interactive Links
 
