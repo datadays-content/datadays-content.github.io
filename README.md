@@ -2,7 +2,7 @@
 
 ## Data Analysis
 
-### static links
+### Static Links
 
 * [1. R Basics](Part 1. Data Analysis/1. R Basics/R Basics.html)
 * [2. dplyr](Part 1. Data Analysis/2. dplyr/dplyr.html)
@@ -12,7 +12,7 @@
 * [6. Statistical Tests](Part 1. Data Analysis/6. Statistical Tests/IntroTests.html)
 * [7. Linear Regression](Part 1. Data Analysis/7. Linear Regression/Linear Regression.html)
 
-### interactive links
+### Interactive Links
 
 * [1. R Basics](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/1.%20R%20Basics.ipynb)
 * [2. dplyr](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/2.%20dplyr.ipynb)
