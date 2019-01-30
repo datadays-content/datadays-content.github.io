@@ -13223,7 +13223,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&#39;repr&#39;</span><span class="p">,</span> <span class="s">&#39;IRdisplay&#39;</span><span class="p">,</span> <span class="s">&#39;evaluate&#39;</span><span class="p">,</span> <span class="s">&#39;crayon&#39;</span><span class="p">,</span> <span class="s">&#39;pbdZMQ&#39;</span><span class="p">,</span> <span class="s">&#39;devtools&#39;</span><span class="p">,</span> <span class="s">&#39;uuid&#39;</span><span class="p">,</span> <span class="s">&#39;digest&#39;</span><span class="p">))</span>
@@ -13243,19 +13243,26 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>also installing the dependencies ‘ini’, ‘desc’, ‘prettyunits’, ‘xopen’, ‘clisymbols’, ‘fs’, ‘gh’, ‘git2r’, ‘memoise’, ‘pkgbuild’, ‘pkgload’, ‘rcmdcheck’, ‘remotes’, ‘sessioninfo’, ‘usethis’
-
+<pre>Installing packages into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
 Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘fs’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘git2r’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘pbdZMQ’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘uuid’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘digest’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘usethis’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘pkgload’ had non-zero exit status”Warning message in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, :
-“installation of package ‘devtools’ had non-zero exit status”Updating HTML index of packages in &#39;.Library&#39;
-Making &#39;packages.html&#39; ... done
-</pre>
+“&#39;lib = &#34;/usr/local/lib/R/site-library&#34;&#39; is not writable”</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+Error in install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, : unable to install packages
+Traceback:
+
+1. install.packages(c(&#34;repr&#34;, &#34;IRdisplay&#34;, &#34;evaluate&#34;, &#34;crayon&#34;, 
+ .     &#34;pbdZMQ&#34;, &#34;devtools&#34;, &#34;uuid&#34;, &#34;digest&#34;))
+2. stop(&#34;unable to install packages&#34;)</pre>
 </div>
 </div>
 
@@ -13278,7 +13285,7 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">devtools</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&#39;IRkernel/IRkernel&#39;</span><span class="p">)</span>
@@ -13297,19 +13304,96 @@ Making &#39;packages.html&#39; ... done
     <div class="prompt"></div>
 
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Downloading GitHub repo IRkernel/IRkernel@master
+&#39;/usr/bin/git&#39; clone --depth 1 --no-hardlinks --recurse-submodules https://github.com/jupyter/jupyter_kernel_test.git /tmp/Rtmpnfvdt4/remotes123364e94dbb/IRkernel-IRkernel-d9ed0e0/tests/testthat/jkt
+&#39;/usr/bin/git&#39; clone --depth 1 --no-hardlinks --recurse-submodules https://github.com/flying-sheep/ndjson-testrunner.git /tmp/Rtmpnfvdt4/remotes123364e94dbb/IRkernel-IRkernel-d9ed0e0/tests/testthat/njr
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+✔  checking for file ‘/tmp/Rtmpnfvdt4/remotes123364e94dbb/IRkernel-IRkernel-d9ed0e0/DESCRIPTION’ ...
+─  preparing ‘IRkernel’:
+✔  checking DESCRIPTION meta-information ...
+─  checking for LF line-endings in source and make files and shell scripts
+─  checking for empty or unneeded directories
+   Removed empty directory ‘IRkernel/example-notebooks’
+─  building ‘IRkernel_0.8.15.9000.tar.gz’
+   
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_text output_error">
 <pre>
-Error in loadNamespace(name): there is no package called ‘devtools’
+Error in i.p(...): (converted from warning) &#39;lib = &#34;/usr/local/lib/R/site-library&#34;&#39; is not writable
 Traceback:
 
-1. devtools::install_github
-2. getExportedValue(pkg, name)
-3. asNamespace(ns)
-4. getNamespace(ns)
-5. tryCatch(loadNamespace(name), error = function(e) stop(e))
-6. tryCatchList(expr, classes, parentenv, handlers)
-7. tryCatchOne(expr, names, parentenv, handlers[[1L]])
-8. value[[3L]](cond)</pre>
+1. devtools::install_github(&#34;IRkernel/IRkernel&#34;)
+2. install_remotes(remotes, auth_token = auth_token, host = host, 
+ .     dependencies = dependencies, upgrade = upgrade, force = force, 
+ .     quiet = quiet, build = build, build_opts = build_opts, repos = repos, 
+ .     type = type, ...)
+3. vapply(remotes, install_remote, ..., FUN.VALUE = character(1))
+4. FUN(X[[i]], ...)
+5. install(source, dependencies = dependencies, upgrade = upgrade, 
+ .     force = force, quiet = quiet, build = build, build_opts = build_opts, 
+ .     repos = repos, type = type, ...)
+6. safe_install_packages(pkgdir, repos = NULL, quiet = quiet, type = &#34;source&#34;, 
+ .     ...)
+7. with_envvar(c(R_LIBS = lib, R_LIBS_USER = lib, R_LIBS_SITE = lib), 
+ .     if (should_error_for_warnings()) {
+ .         with_options(list(warn = 2), with_rprofile_user(&#34;options(warn = 2)&#34;, 
+ .             i.p(...)))
+ .     } else {
+ .         i.p(...)
+ .     })
+8. force(code)
+9. with_options(list(warn = 2), with_rprofile_user(&#34;options(warn = 2)&#34;, 
+ .     i.p(...)))
+10. force(code)
+11. with_rprofile_user(&#34;options(warn = 2)&#34;, i.p(...))
+12. with_envvar(c(R_PROFILE_USER = temp_rprofile), {
+  .     force(code)
+  . })
+13. force(code)
+14. force(code)
+15. i.p(...)
+16. warning(gettextf(&#34;&#39;lib = \&#34;%s\&#34;&#39; is not writable&#34;, lib), domain = NA, 
+  .     immediate. = TRUE)
+17. .signalSimpleWarning(&#34;&#39;lib = \&#34;/usr/local/lib/R/site-library\&#34;&#39; is not writable&#34;, 
+  .     quote(i.p(...)))
+18. withRestarts({
+  .     .Internal(.signalCondition(simpleWarning(msg, call), msg, 
+  .         call))
+  .     .Internal(.dfltWarn(msg, call))
+  . }, muffleWarning = function() NULL)
+19. withOneRestart(expr, restarts[[1L]])
+20. doWithOneRestart(return(expr), restart)</pre>
 </div>
 </div>
 
@@ -14052,7 +14136,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="m">8</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
@@ -14061,6 +14145,67 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>3</li>
+	<li>5</li>
+	<li>7</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>5</li>
+	<li>10</li>
+	<li>15</li>
+	<li>20</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>1.25</li>
+	<li>1.5</li>
+	<li>1.75</li>
+	<li>2</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14079,7 +14224,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">rep</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="n">times</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
@@ -14089,16 +14234,77 @@ Traceback:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>2</li>
+	<li>2</li>
+	<li>2</li>
+	<li>2</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">,</span><span class="nf">seq</span><span class="p">(</span><span class="m">6</span><span class="p">,</span><span class="m">10</span><span class="p">),(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span><span class="m">+10</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+	<li>10</li>
+	<li>11</li>
+	<li>12</li>
+	<li>13</li>
+	<li>14</li>
+	<li>15</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14124,7 +14330,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">u</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="o">:</span><span class="m">1</span><span class="p">)</span>
@@ -14153,6 +14359,175 @@ Traceback:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>10</li>
+	<li>9</li>
+	<li>8</li>
+	<li>7</li>
+	<li>6</li>
+	<li>5</li>
+	<li>4</li>
+	<li>3</li>
+	<li>2</li>
+	<li>1</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Mean :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+5.5
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Standard Deviation :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+3.02765035409749
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Variance :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+9.16666666666667
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Min :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Max :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+10
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Median :&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+5.5
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14168,7 +14543,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## For a random sample of normal distribution</span>
@@ -14181,6 +14556,32 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>-0.0988460340402374</li>
+	<li>0.545274577551075</li>
+	<li>0.253775495955759</li>
+	<li>-0.132137177242155</li>
+	<li>1.42425194077649</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14224,7 +14625,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">vec</span> <span class="o">&lt;-</span> <span class="m">1</span><span class="o">:</span><span class="m">6</span>
@@ -14238,6 +14639,83 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>10</li>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>2</li>
+	<li>8</li>
+	<li>9</li>
+	<li>10</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14266,7 +14744,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="m">1</span><span class="o">:</span><span class="m">6</span> <span class="o">+</span> <span class="m">1</span><span class="o">:</span><span class="m">3</span>
@@ -14283,6 +14761,64 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>2</li>
+	<li>4</li>
+	<li>6</li>
+	<li>5</li>
+	<li>7</li>
+	<li>9</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Warning message in c(1, 2, 3, 10, 20, 30) + 1:5:
+“longer object length is not a multiple of shorter object length”</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>2</li>
+	<li>4</li>
+	<li>6</li>
+	<li>14</li>
+	<li>25</li>
+	<li>31</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14305,7 +14841,7 @@ Traceback:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Create a matrix using matrix() function</span>
@@ -14324,10 +14860,73 @@ Traceback:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<tbody>
+	<tr><td>1</td><td>3</td><td>5</td><td>7</td></tr>
+	<tr><td>2</td><td>4</td><td>6</td><td>8</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<tbody>
+	<tr><td>1</td><td>5</td></tr>
+	<tr><td>2</td><td>6</td></tr>
+	<tr><td>3</td><td>7</td></tr>
+	<tr><td>4</td><td>8</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Name columns and rows of a matrix</span>
@@ -14341,10 +14940,36 @@ Traceback:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>col one</th><th scope=col>col two</th></tr></thead>
+<tbody>
+	<tr><th scope=row>row one</th><td>1</td><td>3</td></tr>
+	<tr><th scope=row>row two</th><td>2</td><td>4</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Calling elements</span>
@@ -14357,10 +14982,32 @@ Traceback:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>col one col two 
+      2       4 
+row one row two 
+      3       4 
+[1] 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># Arithmatic on matrices</span>
@@ -14373,6 +15020,103 @@ Traceback:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Scalar Multiplication:&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>col one</th><th scope=col>col two</th></tr></thead>
+<tbody>
+	<tr><th scope=row>row one</th><td>2</td><td>6</td></tr>
+	<tr><th scope=row>row two</th><td>4</td><td>8</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Element Wise Multiplication:&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>col one</th><th scope=col>col two</th></tr></thead>
+<tbody>
+	<tr><th scope=row>row one</th><td>1 </td><td> 9</td></tr>
+	<tr><th scope=row>row two</th><td>4 </td><td>16</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Matrix Multiplication:&#34;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>col one</th><th scope=col>col two</th></tr></thead>
+<tbody>
+	<tr><th scope=row>row one</th><td> 7</td><td>15</td></tr>
+	<tr><th scope=row>row two</th><td>10</td><td>22</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14398,7 +15142,7 @@ Dataframes:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Create a dataframe with data.frame()</span>
@@ -14414,10 +15158,39 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>ID</th><th scope=col>Name</th><th scope=col>Grade</th></tr></thead>
+<tbody>
+	<tr><td>1      </td><td>Ali    </td><td>20.0   </td></tr>
+	<tr><td>2      </td><td>Reza   </td><td>16.0   </td></tr>
+	<tr><td>3      </td><td>Kiarash</td><td>17.5   </td></tr>
+	<tr><td>4      </td><td>Nima   </td><td>14.0   </td></tr>
+	<tr><td>5      </td><td>Hossein</td><td>19.0   </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Summary of a dataframe</span>
@@ -14428,10 +15201,36 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>       ID         Name       Grade     
+ Min.   :1   Ali    :1   Min.   :14.0  
+ 1st Qu.:2   Hossein:1   1st Qu.:16.0  
+ Median :3   Kiarash:1   Median :17.5  
+ Mean   :3   Nima   :1   Mean   :17.3  
+ 3rd Qu.:4   Reza   :1   3rd Qu.:19.0  
+ Max.   :5               Max.   :20.0  </pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">##Selecting elements</span>
@@ -14442,10 +15241,36 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>20</li>
+	<li>16</li>
+	<li>17.5</li>
+	<li>14</li>
+	<li>19</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df[1</span><span class="p">,</span><span class="n">]</span>
@@ -14455,10 +15280,35 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>ID</th><th scope=col>Name</th><th scope=col>Grade</th></tr></thead>
+<tbody>
+	<tr><td>1  </td><td>Ali</td><td>20 </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df[</span><span class="p">,</span><span class="m">1</span><span class="n">]</span>
@@ -14468,10 +15318,36 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df[df</span><span class="o">$</span><span class="n">Grade</span> <span class="o">&gt;</span> <span class="m">18</span><span class="p">,</span><span class="n">]</span>
@@ -14481,16 +15357,71 @@ Dataframes:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>ID</th><th scope=col>Name</th><th scope=col>Grade</th></tr></thead>
+<tbody>
+	<tr><th scope=row>1</th><td>1      </td><td>Ali    </td><td>20     </td></tr>
+	<tr><th scope=row>5</th><td>5      </td><td>Hossein</td><td>19     </td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df</span><span class="nf">[c</span><span class="p">(</span><span class="s">&quot;ID&quot;</span><span class="p">,</span><span class="s">&quot;Grade&quot;</span><span class="p">)</span><span class="n">]</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>ID</th><th scope=col>Grade</th></tr></thead>
+<tbody>
+	<tr><td>1   </td><td>20.0</td></tr>
+	<tr><td>2   </td><td>16.0</td></tr>
+	<tr><td>3   </td><td>17.5</td></tr>
+	<tr><td>4   </td><td>14.0</td></tr>
+	<tr><td>5   </td><td>19.0</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14509,7 +15440,7 @@ Dataframes:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Depending on the format of dataset</span>
@@ -14518,6 +15449,41 @@ Dataframes:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Warning message in file(file, &#34;rt&#34;):
+“cannot open file &#39;Address of the file&#39;: No such file or directory”</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+Error in file(file, &#34;rt&#34;): cannot open the connection
+Traceback:
+
+1. read.csv(&#34;Address of the file&#34;)
+2. read.table(file = file, header = header, sep = sep, quote = quote, 
+ .     dec = dec, fill = fill, comment.char = comment.char, ...)
+3. file(file, &#34;rt&#34;)</pre>
+</div>
+</div>
+
 </div>
 </div>
 

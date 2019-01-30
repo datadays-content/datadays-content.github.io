@@ -13243,7 +13243,7 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">MASS</span><span class="p">)</span>
@@ -13256,7 +13256,7 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">fix</span><span class="p">(</span><span class="n">Boston</span><span class="p">)</span>
@@ -13265,6 +13265,41 @@ Making &#39;packages.html&#39; ... done
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>'crim'</li>
+	<li>'zn'</li>
+	<li>'indus'</li>
+	<li>'chas'</li>
+	<li>'nox'</li>
+	<li>'rm'</li>
+	<li>'age'</li>
+	<li>'dis'</li>
+	<li>'rad'</li>
+	<li>'tax'</li>
+	<li>'ptratio'</li>
+	<li>'black'</li>
+	<li>'lstat'</li>
+	<li>'medv'</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13288,7 +13323,7 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">medv</span><span class="o">~</span><span class="n">lstat</span> <span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">Boston</span><span class="p">)</span>
@@ -13314,13 +13349,40 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">lm.fit</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>
+Call:
+lm(formula = medv ~ lstat)
+
+Coefficients:
+(Intercept)        lstat  
+      34.55        -0.95  
+</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13338,13 +13400,51 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>
+Call:
+lm(formula = medv ~ lstat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.168  -3.990  -1.318   2.034  24.500 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 34.55384    0.56263   61.41   &lt;2e-16 ***
+lstat       -0.95005    0.03873  -24.53   &lt;2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.216 on 504 degrees of freedom
+Multiple R-squared:  0.5441,	Adjusted R-squared:  0.5432 
+F-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16
+</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13362,13 +13462,46 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">names</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol class=list-inline>
+	<li>'coefficients'</li>
+	<li>'residuals'</li>
+	<li>'effects'</li>
+	<li>'rank'</li>
+	<li>'fitted.values'</li>
+	<li>'assign'</li>
+	<li>'qr'</li>
+	<li>'df.residual'</li>
+	<li>'xlevels'</li>
+	<li>'call'</li>
+	<li>'terms'</li>
+	<li>'model'</li>
+</ol>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13386,13 +13519,38 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">lm.fit</span><span class="o">$</span><span class="n">coefficients</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl class=dl-horizontal>
+	<dt>(Intercept)</dt>
+		<dd>34.5538408793831</dd>
+	<dt>lstat</dt>
+		<dd>-0.95004935375799</dd>
+</dl>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13410,13 +13568,38 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">coef</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl class=dl-horizontal>
+	<dt>(Intercept)</dt>
+		<dd>34.5538408793831</dd>
+	<dt>lstat</dt>
+		<dd>-0.95004935375799</dd>
+</dl>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13433,13 +13616,39 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">confint</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th></th><th scope=col>2.5 %</th><th scope=col>97.5 %</th></tr></thead>
+<tbody>
+	<tr><th scope=row>(Intercept)</th><td>33.448457 </td><td>35.6592247</td></tr>
+	<tr><th scope=row>lstat</th><td>-1.026148 </td><td>-0.8739505</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13456,13 +13665,40 @@ Making &#39;packages.html&#39; ... done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">lstat</span><span class="o">=</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">15</span><span class="p">))),</span> <span class="n">interval</span> <span class="o">=</span><span class="s">&quot; confidence &quot;</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">lstat</span><span class="o">=</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">15</span><span class="p">))),</span> <span class="n">interval</span> <span class="o">=</span><span class="s">&quot;confidence&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<thead><tr><th scope=col>fit</th><th scope=col>lwr</th><th scope=col>upr</th></tr></thead>
+<tbody>
+	<tr><td>29.80359</td><td>29.00741</td><td>30.59978</td></tr>
+	<tr><td>25.05335</td><td>24.47413</td><td>25.63256</td></tr>
+	<tr><td>20.30310</td><td>19.73159</td><td>20.87461</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
