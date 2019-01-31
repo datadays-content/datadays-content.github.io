@@ -22,4 +22,4 @@
 * [6. Statistical Tests](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/6.%20IntroTests.ipynb)
 * [7. Linear Regression](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/7.%20Linear%20Regression.ipynb)
 
-you can also clone the repository and use the contents in the jupyter notebooks.
+You can also use the jupyter notebook's contents by cloning the repository.
