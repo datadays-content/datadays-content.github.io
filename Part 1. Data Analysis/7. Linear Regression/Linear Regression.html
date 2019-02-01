@@ -13196,8 +13196,7 @@ div#notebook {
 کتاب‌خانه‌ها
         </font>
             <hr>
-        <p></p>
-    <font face="XB Zar" size=5>
+            <p></p>
     در این بخش از دیتافریم‌های موجود در کتابخانه MASS استفاده می‌کنیم.
     <br>
 دیتافریم Boston : داده‌های جمع‌آوری شده از میانگین قیمت خانه‌های ۵۰۶ محله در اطراف بوستون.
@@ -13288,14 +13287,13 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div id="sec_simple_reg" style="direction:rtl;line-height:300%;">
-        <font face="XB Niloofar" size=5>
-        <font color=#006FDE size=6>
+        <font face="XB Niloofar" color=#006FDE size=6>
 رگرسیون خطی ساده
         </font>
             <hr>
         <p></p>
     <font face="XB Niloofar" size=5>
-    برای شروع با استفاده از تابع lm() یک مدل ساده‌ی رگرسیون خطی را با medv به عنوان پاسخ(response) و lstat به عنوان پیش‌بین(predictor) بر داده‌ها منطبق می کنیم. سینتکس این کد به صورت lm(response~predictor, data) است. 
+     برای شروع با استفاده از تابع $\texttt{lm()}$ یک مدل ساده‌ی رگرسیون خطی را با medv به عنوان پاسخ(response) و lstat به عنوان پیش‌بین(predictor)  بر داده‌ها منطبق می کنیم. سینتکس این کد به صورت $\texttt{lm(response~predictor, data)}$ است. 
     </font>
 </div>
 </div>
@@ -13372,7 +13370,7 @@ Coefficients:
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-        برای اطلاعات جزئی‌تر از summary(lm.fit) استفاده ‌می‌کنیم.
+        برای اطلاعات جزئی‌تر از $\texttt{summary(lm.fit)}$ استفاده ‌می‌کنیم.
     </font>
 </div>
 </div>
@@ -13434,7 +13432,7 @@ F-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-        با استفاده از تابع names() می‌توانیم بقیه اطلاعاتی که در lm.fit ذخیره‌ شده‌اند ببینیم.
+        با استفاده از تابع $\texttt{names()}$ می‌توانیم بقیه اطلاعاتی که در lm.fit ذخیره‌ شده‌اند ببینیم.
     </font>
 </div>
 </div>
@@ -13540,7 +13538,7 @@ F-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-        اما استفاده از توابع استخراج کننده مانند coef() برای دسترسی به آن‌ها ساده‌تر است:
+        اما استفاده از توابع استخراج کننده مانند $\texttt{coef()}$ برای دسترسی به آن‌ها ساده‌تر است:
     </font>
 </div>
 </div>
@@ -13638,7 +13636,7 @@ F-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-تابع predict() برای ساختن بازه‌های اطمینان و بازه‌های پیش‌بینی برای پیش‌بینی medv برای یک مقدار lstat ورودی است.    </font>
+تابع $\texttt{predict()}$ برای ساختن بازه‌های اطمینان و بازه‌های پیش‌بینی برای پیش‌بینی medv برای یک مقدار lstat ورودی است.    </font>
 </div>
 </div>
 </div>
@@ -13728,7 +13726,7 @@ F-statistic: 601.6 on 1 and 504 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-حال با استفاده از plot() و abline()، نمودار medv و lstat را به همراه رگرسیون کوچکترین مربعات رسم می‌کنیم:
+حال با استفاده از $\texttt{plot()}$ و $\texttt{abline()}$، نمودار medv و lstat را به همراه رگرسیون کوچکترین مربعات رسم می‌کنیم:
     </font>
 </div>
 </div>
@@ -14642,7 +14640,7 @@ TkSuQmCC"
     <font face="XB Niloofar" size=5>
 به نظر می‌رسد رابطه‌ی بین lstat و medv در اینجا غیرخطی است. جلوتر به این مساله خواهیم پرداخت.
         <br>
-        با اعمال کردن plot() مستقیما بر روی خروجی lm() چهار نمودارِ تشخیصی رسم می‌شوند. در واقع این دستور یک نمودار را نمایش می‌دهد و با زدن دکمه‌ی enter می‌توان نمودار بعدی را مشاهده کرد. با استفاده از تابع par() می‌توان هر چهار نمودار را با هم دید. 
+        با اعمال کردن $\texttt{plot()}$ مستقیما بر روی خروجی $\texttt{lm()}$ چهار نمودارِ تشخیصی رسم می‌شوند. در واقع این دستور یک نمودار را نمایش می‌دهد و با زدن دکمه‌ی enter می‌توان نمودار بعدی را مشاهده کرد. با استفاده از تابع $\texttt{par()}$ می‌توان هر چهار نمودار را با هم دید. 
     </font>
 </div>
 </div>
@@ -17672,7 +17670,7 @@ CjsAAAAAkUBhBwAAACASKOwAAAAARAKFHQAAAIBIoLADAAAAEAkUdgAAAAAigcIOAAAAQCRQ
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-می‌توانیم انحراف‌‌های برازش یک رگرسیون خطی را با استفاده از تابع residuals() محاسبه کنیم.    </font>
+می‌توانیم انحراف‌‌های برازش یک رگرسیون خطی را با استفاده از تابع $\texttt{residuals()}$ محاسبه کنیم.    </font>
 </div>
 </div>
 </div>
@@ -19500,7 +19498,7 @@ iZzlA3yOAAAAAElFTkSuQmCC"
     <font face="XB Niloofar" size=5>
 با مشاهده نمودارهای انحراف می‌توان به غیرخطی بودن رابطه پی برد.
         <br>
-        می‌توانیم با تابع hatvalues() آماره‌های leverage را برای هر تعداد پیش‌بین محاسبه کنیم. تابع which.max() اندیس بزرگترین عنصر یک بردار را مشخص می‌کند. در اینجا نشان می‌دهد که کدام مشاهده بزرگترین آماره‌ی leverage را داشته است:
+        می‌توانیم با تابع $\texttt{hatvalues()}$ آماره‌های leverage را برای هر تعداد پیش‌بین محاسبه کنیم. تابع $\texttt{which.max()}$ اندیس بزرگترین عنصر یک بردار را مشخص می‌کند. در اینجا نشان می‌دهد که کدام مشاهده بزرگترین آماره‌ی leverage را داشته است:
     </font>
 </div>
 </div>
@@ -20363,13 +20361,12 @@ AAE6gEAkAQJ0AIFIAgToAAKRBAjQAf4fnGFNfEAsOyIAAAAASUVORK5CYII="
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div id="sec_multi_reg" style="direction:rtl;line-height:300%;">
-            <font face="XB Niloofar" size=5>
-        <font color=#006FDE size=6>
+            <font face="XB Niloofar" color=#006FDE size=6>
 رگرسیون خطی چندتایی
         </font>
             <hr>
-    <font face="XB Zar" size=5>
-برای برازش یک مدل با رگرسیون خطی چندتایی با استفاده از کمترین مربعات، مجددا از تابع lm() استفاده می‌کنیم.
+    <font face="XB Niloofar" size=5>
+برای برازش یک مدل با رگرسیون خطی چندتایی با استفاده از کمترین مربعات، مجددا از تابع $\texttt{lm()}$ استفاده می‌کنیم.
     </font>
 </div>
 </div>
@@ -20641,7 +20638,7 @@ F-statistic: 117.3 on 12 and 493 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-هم‌چنین از تابع update() می‌توان استفاده کرد:
+هم‌چنین از تابع $\texttt{update()}$ می‌توان استفاده کرد:
     </font>
 </div>
 </div>
@@ -20664,12 +20661,11 @@ F-statistic: 117.3 on 12 and 493 DF,  p-value: &lt; 2.2e-16
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div id="sec_intraction_terms" style="direction:rtl;line-height:300%;">
-            <font face="XB Niloofar" size=5>
-        <font color=#006FDE size=6>
+            <font face="XB Niloofar" color=#006FDE size=6>
 روابط متقابل(interaction terms)
         </font>
             <hr>
-    <font face="XB Zar" size=5>
+    <font face="XB Niloofar" size=5>
 دستورِ lstat:black در R یک تقابل بین lstat و black ایجاد می‌کند. دستورِ lstat*age به طور همزمان lstat و age رابطه lstat×age را به عنوان پیش‌بین قرار می‌دهد (در واقع خلاصه شده‌ی عبارت lstat+age+lstat:age است)
                 </font>
 </div>
@@ -20733,13 +20729,12 @@ F-statistic: 209.3 on 3 and 502 DF,  p-value: &lt; 2.2e-16
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div id="sec_nonlinear_pred" style="direction:rtl;line-height:300%;">
-            <font face="XB Niloofar" size=5>
-        <font color=#006FDE size=6>
+            <font face="XB Niloofar" color=#006FDE size=6>
 تبدیل غیرخطی پیش‌بین‌ها
         </font>
             <hr>
-    <font face="XB Zar" size=5>
-تابع lm() می‌تواند با تبدیل‌های غیرخطی پیش‌بین‌ها استفاده شود. به طور مثال ما می‌توانیم با داشتن یک پیش‌بینِ X، یک پیش‌بینِ X<sup>2</sup> را با استفاده از I<i>(X^2)</i> ساخت. به طور مثال:
+    <font face="XB Niloofar" size=5>
+تابع $\texttt{lm()}$ می‌تواند با تبدیل‌های غیرخطی پیش‌بین‌ها استفاده شود. به طور مثال ما می‌توانیم با داشتن یک پیش‌بینِ X، یک پیش‌بینِ X<sup>2</sup> را با استفاده از $\text{I(X^2)}$ ساخت. به طور مثال:
                 </font>
 </div>
 </div>
@@ -20803,7 +20798,7 @@ F-statistic: 448.5 on 2 and 503 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-یک p-value غیرصفر مرتبط با یک عبارت درجه دوم، نشان می‌دهد که مدل بهتر شده است. برای نشان دادن برتری بردازش درجه دوم به بردازش خطی به بیانی دیگر، از تابع anova() استفاده می‌کنیم.    </font>
+یک p-value غیرصفر مرتبط با یک عبارت درجه دوم، نشان می‌دهد که مدل بهتر شده است. برای نشان دادن برتری بردازش درجه دوم به بردازش خطی به بیانی دیگر، از تابع $\texttt{anova()}$ استفاده می‌کنیم.    </font>
 </div>
 </div>
 </div>
@@ -20853,11 +20848,11 @@ F-statistic: 448.5 on 2 and 503 DF,  p-value: &lt; 2.2e-16
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="direction:rtl;line-height:300%;">
     <font face="XB Niloofar" size=5>
-تابع anova() در این جا یک آزمون فرض اجرا می‌کند که دو مدل را مقایسه کند. فرض صفر این است که دو مدل به یک اندازه بر داده منطبق می‌شوند و فرض دیگر این است که مدل دوم بهتر است.
+تابع $\texttt{anova()}$ در این جا یک آزمون فرض اجرا می‌کند که دو مدل را مقایسه کند. فرض صفر این است که دو مدل به یک اندازه بر داده منطبق می‌شوند و فرض دیگر این است که مدل دوم بهتر است.
         <br>
         در اینجا F-statistic، عدد ۱۳۵  است و p-value مربوطه تقریبا صفر است. این به روشنی نشان می‌دهد که مدلی که شامل پیش‌بین‌های ‌‌lstat و  lstat<sup>2</sup> می‌شود به مراتب برتر از مدلی‌‌ست که فقط پیش‌بینِ lstat را دارد. همان‌طور که پیش‌تر هم شواهدی از رابطه‌ای غیرخطی بین medv و lstat دیده بودیم.
          <br><br>
-        با استفاده از تابع poly() می‌توان چندجمله‌ای‌هایی با درجات بالاتر را نیز به سادگی در lm() ساخت. به طور مثال:
+        با استفاده از تابع $\texttt{poly()}$ می‌توان چندجمله‌ای‌هایی با درجات بالاتر را نیز به سادگی در $\texttt{lm()}$ ساخت. به طور مثال:
     </font>
 </div>
 </div>
