@@ -22,4 +22,17 @@
 * [6. Statistical Tests](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/6.%20IntroTests.ipynb)
 * [7. Linear Regression](https://dataanalysis-datadayscontent.notebooks.azure.com/j/notebooks/7.%20Linear%20Regression.ipynb)
 
+## 
+
+## Machine Learning
+
+### Static Links
+
+* [End2End ML Project](https://github.com/datadays-content/datadays-content.github.io/blob/master/Part%202.%20Machine%20Learning/End2End%20ML%20Project.html)
+
+### Interactive Links
+
+* [End2End ML Project]()
+
+
 You can also use the jupyter notebook's contents by cloning the repository.
