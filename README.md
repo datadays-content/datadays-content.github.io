@@ -28,7 +28,7 @@
 
 ### Static Links
 
-* [End2End ML Project](https://github.com/datadays-content/datadays-content.github.io/blob/master/Part%202.%20Machine%20Learning/End2End%20ML%20Project.html)
+* [End2End ML Project](https://datadays-content.github.io/Part%202.%20Machine%20Learning/End2End%20ML%20Project.html)
 
 ### Interactive Links
 
